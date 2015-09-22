@@ -104,20 +104,25 @@ class postController extends Controller
      */
     public function showAction($id)
     {
-        $em = $this->getDoctrine()->getManager();
+        //$em = $this->getDoctrine()->getManager();
 
         //$entity = $em->getRepository('GroblogBundle\Entity:post')->find($id);
 
-        $entity = $em->getRepository('GroblogBundle\Entity:post')->findByLastPost(10);
+        //$entity = $em->getRepository('GroblogBundle:post')->findById($id);
 
-        if (!$entity) {
+
+        $post = $this->getDoctrine()
+            ->getRepository('GroblogBundle:post')
+            ->find($id);
+
+        if (!$post) {
             throw $this->createNotFoundException('Unable to find post entity.');
         }
 
         $deleteForm = $this->createDeleteForm($id);
 
         return $this->render('GroblogBundle:post:show.html.twig', array(
-            'entity'      => $entity,
+            'entity'      => $post,
             'delete_form' => $deleteForm->createView(),
         ));
     }

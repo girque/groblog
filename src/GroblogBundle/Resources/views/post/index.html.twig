@@ -37,46 +37,35 @@
 <div class="container">
 
     <div class="row">
-
         <!-- Blog Post Content Column -->
-
         {% for entity in entities %}
-
-
-            <div class="col-lg-8">
-
+            <div class="col-lg-8 article">
                 <!-- Blog Post -->
-
                 <!-- Title -->
-                <h1><a href="{{ path('post_show', { 'id': entity.id }) }}">{{ entity.id }}</a>{{ entity.title }}</h1>
-
-                <!-- Author -->
-                {#<p class="lead">
-                    by <a href="#">Start Bootstrap</a>
-                </p>#}
-
+                <h1><a href="{{ path('post_show', { 'id': entity.id }) }}">{{ entity.title }}</a></h1>
+                <!-- Preview Image -->
+                {#<img class="img-responsive" src="http://placehold.it/900x300" alt="">#}
                 <hr>
-
+                <!-- Post Content -->
+                <p class="lead">
+                    {{ entity.content }}
+                </p>
+                <hr>
                 <!-- Date/Time -->
                 <p><span class="glyphicon glyphicon-time"></span>
                     {% if entity.datebillet %}
                         Last modified on
                         {{ entity.datebillet|date('F jS \\a\\t g:ia') }}
                     {% endif %}
+                    <br>
+
+                     <a href="{{ path('post_edit', { 'id': entity.id }) }}">
+                        <span class="glyphicon glyphicon-pencil">
+
+                        </span>
+                     </a>Post n°{{ entity.id }}
                 </p>
-
-                <hr>
-
-                <!-- Preview Image -->
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-
-                <hr>
-
-                <!-- Post Content -->
-                <p class="lead">
-                    {{ entity.content }}
-                </p>
-                <hr>
+                {#<hr>
                 <span class="details">
                     <tr>
                         <td>{{ entity.urlAlias }}</td>
@@ -91,64 +80,10 @@
                             </ul>
                         </td>
                     </tr>
-                </span>
+                </span>#}
             </div>
+            <br>
         {% endfor %}
-
-        <!-- Blog Sidebar Widgets Column -->
-        <div class="col-md-4">
-
-            <!-- Blog Search Well -->
-            <div class="well">
-                <h4>Blog Search</h4>
-                <div class="input-group">
-                    <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </button>
-                        </span>
-                </div>
-                <!-- /.input-group -->
-            </div>
-
-            <!-- Blog Categories Well -->
-            <div class="well">
-                <h4>Blog Categories</h4>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /.row -->
-            </div>
-
-            <!-- Side Widget Well -->
-            <div class="well">
-                <h4>Side Widget Well</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
-            </div>
 
         </div>
 

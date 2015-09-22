@@ -1,0 +1,9 @@
+.article{
+    border-radius: 5px;
+    border: 2px solid gray;
+    margin-bottom:  10px;
+}
+
+.sides{
+    float: right;
+}
