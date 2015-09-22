@@ -1,0 +1,8 @@
+groblog_homepage:
+    path:     /
+    defaults: { _controller: GroblogBundle:Default:index }
+
+groblog_post:
+    path:     /post/{id}
+    defaults: { _controller: GroblogBundle:Default:post }
+
