@@ -1,3 +1,7 @@
+groblog:
+    resource: "@GroblogBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
