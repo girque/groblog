@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "861b2c1659b24d21a715105655f368a7",
+    "hash": "bc7d708a78a20311f80553e9d96d3b7d",
+    "content-hash": "0cbe2cdd88aa7506f905eadd04f37566",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -767,6 +768,96 @@
                 "orm"
             ],
             "time": "2015-08-31 12:59:39"
+        },
+        {
+            "name": "evheniy/jquery-bundle",
+            "version": "1.4.3",
+            "target-dir": "Evheniy/JqueryBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/evheniy/JqueryBundle.git",
+                "reference": "41238858bd045a77d0fe6e6e97a467b46c396031"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/evheniy/JqueryBundle/zipball/41238858bd045a77d0fe6e6e97a467b46c396031",
+                "reference": "41238858bd045a77d0fe6e6e97a467b46c396031",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/assetic-bundle": "~2.5-dev",
+                "symfony/symfony": ">=2.3"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Evheniy\\JqueryBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "evheniy",
+                    "homepage": "https://github.com/evheniy"
+                }
+            ],
+            "description": "The JqueryBundle adds the ability to add latest jQuery to your application.",
+            "keywords": [
+                "jquery",
+                "latest",
+                "symfony"
+            ],
+            "time": "2015-09-01 18:01:07"
+        },
+        {
+            "name": "evheniy/materialize-bundle",
+            "version": "1.0.2",
+            "target-dir": "Evheniy/MaterializeBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/evheniy/MaterializeBundle.git",
+                "reference": "450a50685b02a70a90e5b9e4199720a207d3a8e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/evheniy/MaterializeBundle/zipball/450a50685b02a70a90e5b9e4199720a207d3a8e2",
+                "reference": "450a50685b02a70a90e5b9e4199720a207d3a8e2",
+                "shasum": ""
+            },
+            "require": {
+                "evheniy/jquery-bundle": ">=1.0",
+                "php": ">=5.3.0",
+                "symfony/symfony": ">=2.3"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Evheniy\\MaterializeBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "evheniy",
+                    "homepage": "https://github.com/evheniy"
+                }
+            ],
+            "description": "The MaterializeBundle adds the ability to add latest Materialize to your application.",
+            "keywords": [
+                "Symfony2",
+                "adaptive",
+                "google",
+                "latest",
+                "materialize"
+            ],
+            "time": "2015-09-01 11:34:24"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1693,19 +1784,13 @@
             "time": "2015-03-17 06:36:52"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.9"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }

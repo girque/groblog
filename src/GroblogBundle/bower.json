@@ -1,0 +1,26 @@
+{
+  "name": "Groblog",
+  "dependencies": {
+    "jquery": "~1.*",
+    "materialize": "latest",
+    "bootstrap":"3.*"
+  },
+  "version": "0.0.0",
+  "homepage": "https://github.com/girque/groblog",
+  "authors": [
+    "girque <qu.girard@gmail.com>"
+  ],
+  "description": "le blog du TP groblog",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Resources/public/vendor",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "jquery": ">=2.1.1"
+  }
+}
